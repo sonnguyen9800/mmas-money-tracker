@@ -673,7 +673,7 @@ class _DateCardState extends State<DateCard> {
                         horizontal: 50.w, vertical: 30.0.h),
                     elevation: 12,
                     context: context,
-                    value: selectedTime,
+                    value: Time.fromTimeOfDay(selectedTime, 0),
                     is24HrFormat: true,
                     onChange: (value) => setState(() {
                           selectedTime = value;

@@ -60,21 +60,21 @@ class _MyAppState extends State<MyApp> {
     } else {
       return ScreenUtilInit(
         designSize: Size(428.0, 926.0),
-        builder: () => MaterialApp(
+        builder: (_, child) => MaterialApp(
           title: 'MMAS',
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
             textTheme: TextTheme(
-              headline3: TextStyle(
+              displaySmall: TextStyle(
                 fontFamily: 'OpenSans',
                 fontSize: 45.0,
                 color: Colors.deepOrangeAccent,
               ),
-              button: TextStyle(
+              labelLarge: TextStyle(
                 fontFamily: 'OpenSans',
               ),
-              subtitle1: TextStyle(fontFamily: 'NotoSans'),
-              bodyText2: TextStyle(fontFamily: 'NotoSans'),
+              titleMedium: TextStyle(fontFamily: 'NotoSans'),
+              bodyMedium: TextStyle(fontFamily: 'NotoSans'),
             ),
             colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.indigo)
                 .copyWith(secondary: Colors.orange),
